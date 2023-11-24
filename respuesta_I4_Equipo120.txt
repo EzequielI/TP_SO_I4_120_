@@ -1,0 +1,15 @@
+Gonzalez Ricardo
+Videla Iván 
+Ibañez Ezequiel
+
+A- ¿Qué color de fondo tiene su página en el TESTING ?
+El color de fondo que tiene la pagina TESTING es azul.
+
+B- ¿Qué color de fondo tiene su página en el DESARROLLO ?
+El color de fondo que tiene la pagina DESARROLLO es amarillo.
+
+C- ¿Qué color de fondo tiene su página en el MASTER?
+El color de fondo que tiene la pagina MAIN es azul.
+
+D- ¿Qué favicon quedó en el MASTER el de ALFA o el de BETA?
+En la rama MAIN quedo el favicon de BETA
