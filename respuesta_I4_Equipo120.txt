@@ -13,3 +13,36 @@ El color de fondo que tiene la pagina MAIN es azul.
 
 D- ¿Qué favicon quedó en el MASTER el de ALFA o el de BETA?
 En la rama MAIN quedo el favicon de BETA
+
+E- ¿Algún integrante tuvo problemas al hacer el push?
+Si el integrante BETA y GAMMA tuvieron problemas al hacer el push.
+
+F- ¿Qué problemas surgieron? 
+Primero decia que no se podía hacer un push al no estar actualizado el archivo que tenian de forma local. Para solucionarlo se hizo un git pull, pero luego surgió un conflicto con el contenido, por lo que el merge automatico fallo.
+
+G- ¿Qué soluciones pueden aplicar y cual seria la consecuencia de cada solución
+adoptada?
+Las soluciones que podemos aplicar  y las consecuencias de cada solución adoptada son las siguientes: 
+
+Eliminar tus cambios locales:
+Solución: Descartar tus cambios locales en index.html y aceptar la versión remota.
+Consecuencia: Perderás tus modificaciones locales en el archivo.
+
+Eliminar los cambios remotos:
+Solución: Descartar los cambios remotos en index.html y aceptar tu versión local.
+Consecuencia: Perderás los cambios remotos en el archivo.
+
+Combinar cambios manualmente:
+Solución: Abrir index.html y combinar manualmente los cambios en conflicto.
+Consecuencia: Requiere tiempo y atención para resolver los conflictos, pero permite conservar partes específicas de ambos conjuntos de cambios.
+
+Forzar la fusión (no recomendado):
+Solución: Forzar la fusión con push --force o push -f
+Consecuencia: Puede romper el historial y causar problemas si no se entienden completamente los cambios.
+
+H- ¿Qué sucede si cada uno utiliza el push -f?
+Como el git push -f se utiliza para forzar la actualización del repositorio remoto con la rama local, incluso si hay conflictos en el historial del repositorio estaríamos reescribiendo constantemente este con el historial local. Por lo que lo único que quedaría en el index.html de los 3 cambios sería el cambio <p> de GAMMA.
+
+I- ¿Qué debo hacer para que el index.html tengas todos los <p> de los puntos 18,19 y 20
+en DESARROLLO ?
+Tendríamos que pararnos en DESARROLLO (git checkout DESARROLLO) y hacer un git merge TESTING, luego subir los cambios con un git push origin DESARROLLO.
